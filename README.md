@@ -39,18 +39,54 @@ Programando un CMS administrable vía Internet
 ## Evaluación Final Transversal
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 9    | Sumativa | Individual | 👉 40% | Juyeves 13 de febrero | Domingo 23 de febrero |
+| 9    | Sumativa | Individual | 👉 40% | Jueves 13 de febrero | Domingo 23 de febrero |
 
 # SEMANA 1
-Creación de Blog en [https://wordpress.com/](https://wordpress.com/)
-
-<section>
-
-# FUNDAMENTOS DE PHP PARA DESARROLLO DE THEMES EN WORDPRESS
-
-![Landing More Themes](screenshot_landing.png)
 
 PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.
+
+
+# Configuración mínima para trabajar con PHP 
+
+## 1. Instalar un paquete todo-en-uno
+La forma más sencilla de trabajar con PHP sin usar la terminal es instalar un paquete que incluya:
+- **Servidor web (Apache o Nginx).**
+- **PHP.**
+- **Base de datos (opcional, como MySQL o MariaDB).**
+
+### Opciones recomendadas:
+- **[XAMPP](https://www.apachefriends.org/):**
+  - Disponible para Windows, macOS y Linux.
+  - Incluye Apache, PHP y MySQL con una interfaz gráfica.
+- **[MAMP](https://www.mamp.info/):**
+  - Ideal para macOS y Windows, fácil de configurar.
+- **[Laragon](https://laragon.org/):**
+  - Ligero y rápido, recomendado para Windows.
+
+---
+
+## 2. Configurar el servidor
+1. **Instala el paquete elegido (ejemplo: XAMPP).**
+2. Abre la interfaz gráfica del servidor.
+3. Inicia el servidor Apache (y MySQL si lo necesitas).
+4. Coloca tus archivos PHP en la carpeta pública del servidor:
+   - En XAMPP: `htdocs` (normalmente en `C:\xampp\htdocs` en Windows o `/Applications/XAMPP/htdocs` en macOS).
+   - En MAMP: `htdocs` también.
+   - En Laragon: `www`.
+
+---
+
+## 3. Crear y ejecutar tu archivo PHP
+1. Crea un archivo PHP en la carpeta pública del servidor. Por ejemplo:
+   - `C:\xampp\htdocs\mi_proyecto\index.php`.
+
+2. Escribe el código PHP:
+    ```php
+		<?php
+			echo "¡Hola, mundo!";
+		?>
+    ```
+
 
 
 ## PARA ESCRIBIR PHP
