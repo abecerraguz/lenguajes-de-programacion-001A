@@ -164,7 +164,13 @@ La forma más sencilla de trabajar con PHP sin usar la terminal es instalar un p
 
 	<?php
 		// Array Asociativo, están ordenados en vase a una llave y el valor asociado a la llave.
-		$color = array('pasto' => 'Verde', 'cielo' => 'Celeste', 'mar' => 'Azul');
+		$color = array(
+
+			'pasto' => 'Verde', 
+			'cielo' => 'Celeste', 
+			'mar' => 'Azul'
+			
+		);
 		echo 'El color que indicaremos será el siguiente:'.$color['pasto'];
 	?>
 
@@ -216,7 +222,7 @@ $x--	Post-decrementa
 
 ```
 
-## ESTRUCTURA DE CONTROL MÁS UTILIZADAS EN WORDPRESS
+## ESTRUCTURA DE CONTROL
 
 ### Condicional IF
 ```php
@@ -381,6 +387,35 @@ En PHP, una función se define con la palabra clave function, seguida del nombre
 		echo "La fruta es:'.$frutas.'<br>';
 		}
 	?> 
+
+```
+
+# Ejercicio formativo 1 : Clase sincrónica sistema de calificaciones 
+
+Crea un programa en PHP que evalúe las calificaciones de un grupo de estudiantes y determine:
+
+-	Si cada estudiante aprobó o reprobó.
+-	El promedio general del grupo.
+-	Los nombres de los estudiantes que aprobaron.
+
+## Requisitos
+1.	Define un array con los nombres de los estudiantes y sus respectivas calificaciones.
+2.	Usa una función para determinar si un estudiante aprueba (nota mayor o igual a 60).
+3.	Usa estructuras de control if para verificar las condiciones.
+4.	Calcula el promedio del grupo.
+5.	Muestra los resultados.
+
+```php
+
+    // 1 . definimos los estudiantes
+    $estudiantes = [
+		["nombre" => "Carlos", "calificacion" => 85],
+		["nombre" => "Ana", "calificacion" => 45],
+		["nombre" => "Luis", "calificacion" => 70],
+		["nombre" => "María", "calificacion" => 55],
+		["nombre" => "Sofía", "calificacion" => 90]
+	];
+
 
 ```
 
