@@ -389,8 +389,8 @@ En PHP, una función se define con la palabra clave function, seguida del nombre
 	?> 
 
 ```
-
-# Ejercicio formativo 1 : Clase sincrónica sistema de calificaciones 
+# Semana 1
+## Ejercicio formativo 1 : Clase sincrónica sistema de calificaciones 
 
 Crea un programa en PHP que evalúe las calificaciones de un grupo de estudiantes y determine:
 
@@ -405,19 +405,13 @@ Crea un programa en PHP que evalúe las calificaciones de un grupo de estudiante
 4.	Calcula el promedio del grupo.
 5.	Muestra los resultados.
 
-```php
+## Solución ejercicio
+[Actividad Formativa 01](https://github.com/abecerraguz/lenguajes-de-programacion-001A/tree/main/actividades-formativas/semana-01)
 
-    // 1 . definimos los estudiantes
-    $estudiantes = [
-		["nombre" => "Carlos", "calificacion" => 85],
-		["nombre" => "Ana", "calificacion" => 45],
-		["nombre" => "Luis", "calificacion" => 70],
-		["nombre" => "María", "calificacion" => 55],
-		["nombre" => "Sofía", "calificacion" => 90]
-	];
+# Semana 2
+## Actividad Sumativa 1: Preparando las plantillas para un CMS
 
 
-```
 
 </section>
 
