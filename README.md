@@ -81,11 +81,11 @@ La forma más sencilla de trabajar con PHP sin usar la terminal es instalar un p
    - `C:\xampp\htdocs\mi_proyecto\index.php`.
 
 2. Escribe el código PHP:
-    ```php
+	```php
 		<?php
 			echo "¡Hola, mundo!";
 		?>
-    ```
+	```
 
 
 
@@ -240,31 +240,31 @@ $x--	Post-decrementa
 ### Condicional anidado con operadores de comparación y operador lógico
 ```php
 
-    <?php
-        $edad = 25;
-        $ingresos = 3000;
+	<?php
+		$edad = 25;
+		$ingresos = 3000;
 
-        // Verificar si la persona es mayor de edad y tiene ingresos suficientes
-        if ($edad >= 18 && $ingresos >= 2500) {
-            echo "Eres mayor de edad y tienes ingresos suficientes.";
-        } elseif ($edad < 18) {
-            echo "Eres menor de edad.";
-        } else {
-            echo "No tienes ingresos suficientes.";
-        }
-    ?>
+		// Verificar si la persona es mayor de edad y tiene ingresos suficientes
+		if ($edad >= 18 && $ingresos >= 2500) {
+			echo "Eres mayor de edad y tienes ingresos suficientes.";
+		} elseif ($edad < 18) {
+			echo "Eres menor de edad.";
+		} else {
+			echo "No tienes ingresos suficientes.";
+		}
+	?>
 
-    <?php
-        $hora = 22; // Hora actual en formato de 24 horas
-        $díaFestivo = true; // Si es día festivo
+	<?php
+		$hora = 22; // Hora actual en formato de 24 horas
+		$díaFestivo = true; // Si es día festivo
 
-        // Verificar si es tarde o si es día festivo
-        if ($hora >= 21 || $díaFestivo) {
-            echo "Puedes quedarte despierto hasta tarde.";
-        } else {
-            echo "Es hora de dormir temprano.";
-        }
-    ?>
+		// Verificar si es tarde o si es día festivo
+		if ($hora >= 21 || $díaFestivo) {
+			echo "Puedes quedarte despierto hasta tarde.";
+		} else {
+			echo "Es hora de dormir temprano.";
+		}
+	?>
 
 ```
 
@@ -279,43 +279,43 @@ Una función en PHP es un bloque de código que se puede reutilizar para realiza
 En PHP, una función se define con la palabra clave function, seguida del nombre de la función, paréntesis (que pueden contener parámetros) y un bloque de código encerrado en llaves {}.
 
 ```php
-    function nombreFuncion($parametro1, $parametro2) {
-        // Código que realiza la función
-        return $resultado; // Opcional
-    }
+	function nombreFuncion($parametro1, $parametro2) {
+		// Código que realiza la función
+		return $resultado; // Opcional
+	}
 ```
 
 ### Ejemplo básico: Función para sumar dos números
 
 ```php
 
-    <?php
-        // Definir la función
-        function sumar($numero1, $numero2) {
-            $resultado = $numero1 + $numero2;
-            return $resultado; // Devuelve el resultado de la suma
-        }
+	<?php
+		// Definir la función
+		function sumar($numero1, $numero2) {
+			$resultado = $numero1 + $numero2;
+			return $resultado; // Devuelve el resultado de la suma
+		}
 
-        // Llamar a la función
-        $suma = sumar(5, 10);
-        echo "La suma es: " . $suma; // Salida: La suma es: 15
-    ?>
+		// Llamar a la función
+		$suma = sumar(5, 10);
+		echo "La suma es: " . $suma; // Salida: La suma es: 15
+	?>
 
 ```
 
 ### Ejemplo avanzado: Función con valor por defecto
 
 ```php
-    <?php
-    function saludar($nombre = "Invitado") {
-        return "Hola, " . $nombre . "!";
-    }
+	<?php
+	function saludar($nombre = "Invitado") {
+		return "Hola, " . $nombre . "!";
+	}
 
-    // Llamar a la función con un argumento
-    echo saludar("Carlos"); // Salida: Hola, Carlos!
+	// Llamar a la función con un argumento
+	echo saludar("Carlos"); // Salida: Hola, Carlos!
 
-    // Llamar a la función sin argumentos
-    echo saludar(); // Salida: Hola, Invitado!
+	// Llamar a la función sin argumentos
+	echo saludar(); // Salida: Hola, Invitado!
 ?>
 
 
@@ -325,14 +325,14 @@ En PHP, una función se define con la palabra clave function, seguida del nombre
 
 ```php
 
-    <?php
-        function mostrarFechaActual() {
-            echo "La fecha actual es: " . date("Y-m-d");
-        }
+	<?php
+		function mostrarFechaActual() {
+			echo "La fecha actual es: " . date("Y-m-d");
+		}
 
-        // Llamar a la función
-        mostrarFechaActual(); // Salida: La fecha actual es: 2024-12-24
-    ?>
+		// Llamar a la función
+		mostrarFechaActual(); // Salida: La fecha actual es: 2024-12-24
+	?>
 
 ```
 
@@ -531,7 +531,86 @@ En MySQL, los tipos de datos se dividen en tres categorías principales: **numé
 - Es una columna (o conjunto de columnas) en una tabla que se utiliza para establecer una relación con la PRIMARY KEY de otra tabla.
 - Garantiza la integridad referencial, es decir, los valores en la FOREIGN KEY deben coincidir con los valores de la PRIMARY KEY en la tabla relacionada.
 
+# Ejemplo
+Ejemplo:
+Supongamos que tenemos una base de datos llamada  mi_tienda
+Supongamos que tenemos dos tablas: users y orders.
 
+1. Tabla users: Contiene información de los usuarios.
+	-	Tiene una PRIMARY KEY llamada user_id.
+
+2. Tabla orders: Contiene información sobre pedidos.
+
+	-	Tiene una FOREIGN KEY llamada user_id que referencia a la PRIMARY KEY de users.
+
+### Código SQL:
+
+```sql
+
+	-- Crear tabla users
+	CREATE TABLE users (
+		user_id INT AUTO_INCREMENT PRIMARY KEY, -- PRIMARY KEY
+		name VARCHAR(100) NOT NULL,
+		email VARCHAR(100) UNIQUE NOT NULL
+	);
+
+	-- Crear tabla orders
+	CREATE TABLE orders (
+		order_id INT AUTO_INCREMENT PRIMARY KEY, -- PRIMARY KEY
+		order_date DATE NOT NULL,
+		user_id INT, -- FOREIGN KEY
+		FOREIGN KEY (user_id) REFERENCES users(user_id)
+	);
+
+```
+
+# Explicación del código:
+1. En la tabla users:
+
+	-	user_id es la PRIMARY KEY, lo que significa que cada usuario tendrá un identificador único.
+	-	AUTO_INCREMENT asegura que los valores de user_id se generen automáticamente de forma incremental.
+
+2. En la tabla orders:
+
+	- order_id es la PRIMARY KEY.
+	- user_id es una FOREIGN KEY que apunta a user_id en la tabla users.
+	- La relación asegura que solo se puedan insertar valores en orders.user_id que existan en users.user_id.
+
+### Insertar datos:
+```sql
+	-- Insertar usuarios en la tabla users
+	INSERT INTO users (name, email) VALUES 
+	('John Doe', 'john@example.com'),
+	('Jane Smith', 'jane@example.com');
+
+	-- Insertar pedidos en la tabla orders
+	INSERT INTO orders (order_date, user_id) VALUES 
+	('2025-01-08', 1), -- user_id 1 pertenece a John Doe
+	('2025-01-09', 2); -- user_id 2 pertenece a Jane Smith
+
+```
+
+### Consulta de datos:
+
+```sql
+	-- Obtener los pedidos junto con los nombres de los usuarios
+	SELECT orders.order_id, orders.order_date, users.name
+	FROM orders
+	JOIN users ON orders.user_id = users.user_id;
+
+```
+
+### Resultado
+
+| order_id | order_date | name        |
+|----------|------------|-------------|
+| 1        | 2025-01-08 | John Doe    |
+| 2        | 2025-01-09 | Jane Smith  |
+
+
+# Conclusión:
+- La PRIMARY KEY asegura que cada registro en una tabla sea único.
+- La FOREIGN KEY crea una relación entre tablas, garantizando que los datos sean consistentes.
 
 </section>
 
