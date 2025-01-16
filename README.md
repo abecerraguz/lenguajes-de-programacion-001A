@@ -744,6 +744,405 @@ ON
     cms_articulos.a_autor = cms_usuarios.u_id;
 
 ```
+
+
+# Complementario Semana 4 (Sólo los que consideren hacer su propio modelo)
+## Ejemplo de Base de Datos de una Biblioteca en Primera Normalización (1NF)
+### Normalización
+La normalización en SQL es un proceso sistemático de organización de los datos en una base de datos para:
+
+1. Reducir la redundancia de datos: Evitar la repetición innecesaria de información.
+2. Mejorar la integridad de los datos: Garantizar que los datos sean consistentes y correctos.
+3. Facilitar el mantenimiento y las actualizaciones: Hacer que la base de datos sea más flexible y fácil de gestionar.
+
+El objetivo principal de la normalización es dividir los datos en tablas relacionadas de forma lógica, siguiendo una serie de reglas conocidas como formas normales.
+
+## Conceptos de la Primera Forma Normal (1NF)
+La 1NF establece que:
+1. Todos los valores de cada columna deben ser atómicos (no se permiten valores repetidos ni listas en una celda).
+2. Cada fila debe ser única (se requiere una clave primaria).
+3. Los datos deben estar organizados en tablas, sin columnas repetidas.
+
+---
+
+## Ejemplo: Base de Datos de una Biblioteca
+
+### Tabla sin normalizar
+| ID | Título               | Autor                   | Géneros                  | Editorial     | Copias | Año |
+|----|----------------------|-------------------------|--------------------------|---------------|--------|-----|
+| 1  | El Quijote           | Miguel de Cervantes     | Clásico, Novela          | Editorial X   | 3      | 1605 |
+| 2  | Cien años de soledad | Gabriel García Márquez  | Novela, Realismo mágico  | Editorial Y   | 2      | 1967 |
+
+### Problemas:
+- La columna "Géneros" tiene múltiples valores en una sola celda (Clásico, Novela).
+- No hay separación de entidades relacionadas como autor, género o editorial.
+- Difícil de mantener y consultar.
+
+---
+
+## Primera Forma Normal (1NF)
+Separamos los datos en tablas relacionadas para eliminar valores repetidos y listas.
+
+### Tabla: Libros
+| ID_Libro | Título               | ID_Autor | ID_Editorial | Año |
+|----------|----------------------|----------|--------------|-----|
+| 1        | El Quijote           | 1        | 1            | 1605 |
+| 2        | Cien años de soledad | 2        | 2            | 1967 |
+
+---
+
+### Tabla: Autores
+| ID_Autor | Nombre                  |
+|----------|-------------------------|
+| 1        | Miguel de Cervantes     |
+| 2        | Gabriel García Márquez  |
+
+---
+
+### Tabla: Editoriales
+| ID_Editorial | Nombre        |
+|--------------|---------------|
+| 1            | Editorial X   |
+| 2            | Editorial Y   |
+
+---
+
+### Tabla: Géneros
+| ID_Género | Género             |
+|-----------|--------------------|
+| 1         | Clásico            |
+| 2         | Novela             |
+| 3         | Realismo mágico    |
+
+---
+
+### Tabla: Libro_Géneros
+| ID_Libro | ID_Género |
+|----------|-----------|
+| 1        | 1         |
+| 1        | 2         |
+| 2        | 2         |
+| 2        | 3         |
+
+---
+
+### Tabla: Copias
+| ID_Copia | ID_Libro | Disponible |
+|----------|----------|------------|
+| 1        | 1        | Sí         |
+| 2        | 1        | Sí         |
+| 3        | 1        | No         |
+| 4        | 2        | Sí         |
+| 5        | 2        | Sí         |
+
+---
+
+## Ventajas de la 1NF
+1. **Eliminación de redundancia:** Cada dato está almacenado solo una vez.
+2. **Facilidad de actualización:** Actualizar información como el nombre de un autor no afecta otras tablas.
+3. **Mejor estructura:** Los datos están organizados y son más fáciles de consultar.
+
+---
+
+
+# Base de Datos de una Biblioteca en Segunda Forma Normal (2NF)
+
+## Revisión de la Primera Forma Normal (1NF)
+En la 1NF, los datos se dividieron en tablas relacionadas, eliminando valores no atómicos y redundancias básicas.
+
+Sin embargo, algunas tablas pueden tener dependencias parciales. Por ejemplo:
+- En la tabla `Copias`, la columna `Disponible` depende directamente de `ID_Copia`, no de `ID_Libro`.
+
+---
+
+## Cambios para Cumplir con la Segunda Forma Normal (2NF)
+
+### Tabla: Libros (Sin cambios)
+| ID_Libro | Título               | ID_Autor | ID_Editorial | Año |
+|----------|----------------------|----------|--------------|-----|
+| 1        | El Quijote           | 1        | 1            | 1605 |
+| 2        | Cien años de soledad | 2        | 2            | 1967 |
+
+---
+
+### Tabla: Autores (Sin cambios)
+| ID_Autor | Nombre                  |
+|----------|-------------------------|
+| 1        | Miguel de Cervantes     |
+| 2        | Gabriel García Márquez  |
+
+---
+
+### Tabla: Editoriales (Sin cambios)
+| ID_Editorial | Nombre        |
+|--------------|---------------|
+| 1            | Editorial X   |
+| 2            | Editorial Y   |
+
+---
+
+### Tabla: Géneros (Sin cambios)
+| ID_Género | Género             |
+|-----------|--------------------|
+| 1         | Clásico            |
+| 2         | Novela             |
+| 3         | Realismo mágico    |
+
+---
+
+### Tabla: Libro_Géneros (Sin cambios)
+| ID_Libro | ID_Género |
+|----------|-----------|
+| 1        | 1         |
+| 1        | 2         |
+| 2        | 2         |
+| 2        | 3         |
+
+---
+
+### Tabla: Copias (Modificada)
+La columna `Disponible` ahora depende únicamente de `ID_Copia`. Por lo tanto, no hay dependencias parciales en esta tabla.
+
+| ID_Copia | ID_Libro |
+|----------|----------|
+| 1        | 1        |
+| 2        | 1        |
+| 3        | 1        |
+| 4        | 2        |
+| 5        | 2        |
+
+---
+
+### Nueva Tabla: Disponibilidad
+Se crea una nueva tabla para almacenar la disponibilidad de las copias, eliminando dependencias parciales.
+
+| ID_Copia | Disponible |
+|----------|------------|
+| 1        | Sí         |
+| 2        | Sí         |
+| 3        | No         |
+| 4        | Sí         |
+| 5        | Sí         |
+
+---
+
+## Ventajas de la Segunda Forma Normal (2NF)
+1. **Eliminación de dependencias parciales:** Ahora, cada columna no clave depende completamente de la clave primaria.
+2. **Mayor consistencia:** Los datos están mejor organizados, evitando redundancias y errores.
+3. **Facilidad de mantenimiento:** Actualizar datos como la disponibilidad de una copia no afecta a otras tablas.
+
+---
+
+# Base de Datos de una Biblioteca en Tercera Forma Normal (3NF)
+
+## Revisión de la Segunda Forma Normal (2NF)
+En la 2NF, eliminamos dependencias parciales dividiendo las tablas y organizando los datos. Sin embargo, pueden existir dependencias transitivas. Por ejemplo:
+- En la tabla `Libros`, la columna `ID_Editorial` se refiere a una editorial, pero el nombre de la editorial depende de `ID_Editorial`, no directamente de la clave primaria `ID_Libro`.
+
+---
+
+## Cambios para Cumplir con la Tercera Forma Normal (3NF)
+
+### Tabla: Libros (Sin cambios)
+| ID_Libro | Título               | ID_Autor | ID_Editorial | Año |
+|----------|----------------------|----------|--------------|-----|
+| 1        | El Quijote           | 1        | 1            | 1605 |
+| 2        | Cien años de soledad | 2        | 2            | 1967 |
+
+---
+
+### Tabla: Autores (Sin cambios)
+| ID_Autor | Nombre                  |
+|----------|-------------------------|
+| 1        | Miguel de Cervantes     |
+| 2        | Gabriel García Márquez  |
+
+---
+
+### Tabla: Editoriales (Sin cambios)
+| ID_Editorial | Nombre        |
+|--------------|---------------|
+| 1            | Editorial X   |
+| 2            | Editorial Y   |
+
+---
+
+### Tabla: Géneros (Sin cambios)
+| ID_Género | Género             |
+|-----------|--------------------|
+| 1         | Clásico            |
+| 2         | Novela             |
+| 3         | Realismo mágico    |
+
+---
+
+### Tabla: Libro_Géneros (Sin cambios)
+| ID_Libro | ID_Género |
+|----------|-----------|
+| 1        | 1         |
+| 1        | 2         |
+| 2        | 2         |
+| 2        | 3         |
+
+---
+
+### Tabla: Copias (Sin cambios)
+| ID_Copia | ID_Libro |
+|----------|----------|
+| 1        | 1        |
+| 2        | 1        |
+| 3        | 1        |
+| 4        | 2        |
+| 5        | 2        |
+
+---
+
+### Tabla: Disponibilidad (Sin cambios)
+| ID_Copia | Disponible |
+|----------|------------|
+| 1        | Sí         |
+| 2        | Sí         |
+| 3        | No         |
+| 4        | Sí         |
+| 5        | Sí         |
+
+---
+
+## Análisis de Dependencias Transitivas
+- No hay dependencias transitivas adicionales. Todas las columnas no clave dependen únicamente de las claves primarias en sus respectivas tablas.
+
+---
+
+## Ventajas de la Tercera Forma Normal (3NF)
+1. **Eliminación de dependencias transitivas:** Los datos están completamente normalizados.
+2. **Eficiencia en consultas:** Se reduce el riesgo de inconsistencias y redundancias.
+3. **Facilidad de escalabilidad:** Es más sencillo agregar nuevas entidades o relaciones sin afectar la estructura existente.
+
+---
+
+¡Felicidades! Ahora la base de datos está completamente normalizada en la tercera forma normal. 🎉
+
+## Ejemplo SQL
+```sql
+		-- Crear la base de datos
+		CREATE DATABASE Biblioteca;
+
+		USE Biblioteca;
+
+		-- Crear la tabla de Autores
+		CREATE TABLE Autores (
+			ID_Autor INT AUTO_INCREMENT PRIMARY KEY,
+			Nombre VARCHAR(100) NOT NULL
+		);
+
+		-- Insertar datos en la tabla de Autores
+		INSERT INTO Autores (Nombre) VALUES 
+		('Miguel de Cervantes'),
+		('Gabriel García Márquez');
+
+		-- Crear la tabla de Editoriales
+		CREATE TABLE Editoriales (
+			ID_Editorial INT AUTO_INCREMENT PRIMARY KEY,
+			Nombre VARCHAR(100) NOT NULL
+		);
+
+		-- Insertar datos en la tabla de Editoriales
+		INSERT INTO Editoriales (Nombre) VALUES 
+		('Editorial X'),
+		('Editorial Y');
+
+		-- Crear la tabla de Géneros
+		CREATE TABLE Generos (
+			ID_Genero INT AUTO_INCREMENT PRIMARY KEY,
+			Genero VARCHAR(50) NOT NULL
+		);
+
+		-- Insertar datos en la tabla de Géneros
+		INSERT INTO Generos (Genero) VALUES 
+		('Clásico'),
+		('Novela'),
+		('Realismo mágico');
+
+		-- Crear la tabla de Libros
+		CREATE TABLE Libros (
+			ID_Libro INT AUTO_INCREMENT PRIMARY KEY,
+			Titulo VARCHAR(150) NOT NULL,
+			ID_Autor INT NOT NULL,
+			ID_Editorial INT NOT NULL,
+			Año INT NOT NULL,
+			FOREIGN KEY (ID_Autor) REFERENCES Autores(ID_Autor),
+			FOREIGN KEY (ID_Editorial) REFERENCES Editoriales(ID_Editorial)
+		);
+
+		-- Insertar datos en la tabla de Libros
+		INSERT INTO Libros (Titulo, ID_Autor, ID_Editorial, Año) VALUES 
+		('El Quijote', 1, 1, 1605),
+		('Cien años de soledad', 2, 2, 1967);
+
+		-- Crear la tabla de Libro_Géneros
+		CREATE TABLE Libro_Generos (
+			ID_Libro INT NOT NULL,
+			ID_Genero INT NOT NULL,
+			PRIMARY KEY (ID_Libro, ID_Genero),
+			FOREIGN KEY (ID_Libro) REFERENCES Libros(ID_Libro),
+			FOREIGN KEY (ID_Genero) REFERENCES Generos(ID_Genero)
+		);
+
+		-- Insertar datos en la tabla de Libro_Géneros
+		INSERT INTO Libro_Generos (ID_Libro, ID_Genero) VALUES 
+		(1, 1),
+		(1, 2),
+		(2, 2),
+		(2, 3);
+
+		-- Crear la tabla de Copias
+		CREATE TABLE Copias (
+			ID_Copia INT AUTO_INCREMENT PRIMARY KEY,
+			ID_Libro INT NOT NULL,
+			FOREIGN KEY (ID_Libro) REFERENCES Libros(ID_Libro)
+		);
+
+		-- Insertar datos en la tabla de Copias
+		INSERT INTO Copias (ID_Libro) VALUES 
+		(1), (1), (1),
+		(2), (2);
+
+		-- Crear la tabla de Disponibilidad
+		CREATE TABLE Disponibilidad (
+			ID_Copia INT PRIMARY KEY,
+			Disponible ENUM('Sí', 'No') NOT NULL,
+			FOREIGN KEY (ID_Copia) REFERENCES Copias(ID_Copia)
+		);
+
+		-- Insertar datos en la tabla de Disponibilidad
+		INSERT INTO Disponibilidad (ID_Copia, Disponible) VALUES 
+		(1, 'Sí'),
+		(2, 'Sí'),
+		(3, 'No'),
+		(4, 'Sí'),
+		(5, 'Sí');
+
+```
+
+Explicación:
+
+1. Claves primarias y foráneas:
+
+	- Cada tabla tiene una clave primaria (PRIMARY KEY) para identificar de forma única cada registro.
+	- Las relaciones entre tablas están definidas mediante claves foráneas (FOREIGN KEY).
+
+2. Tablas relacionadas:
+
+	- Libro_Generos es una tabla intermedia para la relación muchos-a-muchos entre Libros y Generos.
+	- Disponibilidad se separa de Copias para evitar dependencias transitivas.
+
+3. Datos de ejemplo:
+
+	- Los inserts iniciales incluyen ejemplos basados en los libros, autores, editoriales y géneros proporcionados.
+
+![Modelo Bajo las tres formas normales](assets/img/modelo-biblioteca.png)
+
+
 </section>
 
 
