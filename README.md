@@ -744,7 +744,8 @@ ON
     cms_articulos.a_autor = cms_usuarios.u_id;
 
 ```
-
+# RESUMEN DE JOIN
+![Modelo Bajo las tres formas normales](assets/img/join.jpg)
 
 # Complementario Semana 4 (Sólo los que consideren hacer su propio modelo)
 ## Ejemplo de Base de Datos de una Biblioteca en Primera Normalización (1NF)
