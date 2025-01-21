@@ -745,7 +745,7 @@ ON
 
 ```
 # RESUMEN DE JOIN
-![Modelo Bajo las tres formas normales](assets/img/join.jpg)
+![Ejemplo de JOIN](assets/img/join.jpeg)
 
 # Complementario Semana 4 (Sólo los que consideren hacer su propio modelo)
 ## Ejemplo de Base de Datos de una Biblioteca en Primera Normalización (1NF)
