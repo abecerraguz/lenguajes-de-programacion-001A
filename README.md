@@ -1145,6 +1145,26 @@ Explicación:
 
 
 # Semana 5: Desplegando el contenido de una base de datos
+## ¿Qué es una Clase?
+
+En PHP, una clase es como un plano o plantilla que define las propiedades (atributos) y comportamientos (métodos) de un objeto. Es decir, es una estructura que describe cómo serán los objetos que se creen a partir de ella.
+
+### Ejemplo:
+Imagina que quieres crear una clase para representar a una persona. Esta clase podría tener las siguientes propiedades:
+
+	- nombre
+	- edad
+	- altura
+	- peso
+
+Y los siguientes métodos:
+
+	- caminar()
+	- hablar()
+	- comer()
+
+
+
 ## Componentes principales de una clase
 1. Propiedades:
 
@@ -1180,7 +1200,7 @@ Explicación:
         public $edad;
 
         // Constructor
-        public function __construct($nombre, $edad) {
+        public function __construct( $nombre, $edad) {
             $this->nombre = $nombre;
             $this->edad = $edad;
         }
