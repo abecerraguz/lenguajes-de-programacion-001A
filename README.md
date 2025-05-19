@@ -1,4 +1,4 @@
-# Hitos de la asignatura
+# Hitos de la asignaturaaa
 
 ## Lenguajes de programación
 
@@ -1332,6 +1332,9 @@ include y include_once permiten continuar con la ejecución incluso si no encuen
 require y require_once detienen la ejecución si el archivo no se encuentra.
 
 Esto te permite elegir la mejor opción según la importancia del archivo que deseas importar. 😊
+
+
+# Semana 6: Desplegando el contenido de una base de datos
 
 </section>
 
