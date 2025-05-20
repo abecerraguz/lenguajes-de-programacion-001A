@@ -134,14 +134,12 @@ La forma más sencilla de trabajar con PHP sin usar la terminal es instalar un p
 
 	<?php
 		// Array Multidimencional Arreglos dentro de un Arreglo
-		$frutas array(
-		
+		$frutas 
 			array('Manzana','rojo','12'),
 			array('Naranja','naranjo','10'),
 			array('Pera','verde','18')
-
-			echo $frutas[0][0].' Su color es:'.$frutas[0][1].' y quedan disponibles '.$frutas[0][1];
 		)
+		echo $frutas[0][0].' Su color es:'.$frutas[0][1].' y quedan disponibles '.$frutas[0][1];
 	?>
 
 

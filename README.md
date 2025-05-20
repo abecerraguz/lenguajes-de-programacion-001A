@@ -1,4 +1,4 @@
-# Hitos de la asignaturaaa
+# Hitos de la asignatura
 
 ## Lenguajes de programación
 
