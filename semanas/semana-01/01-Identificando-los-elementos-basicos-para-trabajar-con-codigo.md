@@ -73,6 +73,14 @@ La forma más sencilla de trabajar con PHP sin usar la terminal es instalar un p
 
 ```
 
+## PARA REALIZAR UN DEBUG
+Al comienzo de tu archivo PHP (en desarrollo):
+```php
+   ini_set('display_errors', 1);
+   ini_set('display_startup_errors', 1);
+   error_reporting(E_ALL);
+```
+
 ## VARIABLES TIPO CADENAS O STRING
 ```php
 
@@ -356,10 +364,7 @@ Crea un programa en PHP que evalúe las calificaciones de un grupo de estudiante
 ### Solución ejercicio
 [Actividad Formativa 01](https://github.com/abecerraguz/lenguajes-de-programacion-001A/tree/main/actividades-formativas/semana-01)
 
-## Semana 2
-### Actividad Sumativa 1: Preparando las plantillas para un CMS
 
-[Actividad Sumativa 01](https://github.com/abecerraguz/lenguajes-de-programacion-001A/tree/main/actividades-sumativas/semana-02/proyecto-cms)
 
 ### Cierre de Experiencia 1
 [Video Cierre, Experiencia de Aprendizaje 1: Comprendiendo los elementos básicos de programación.](https://drive.google.com/file/d/1XrqAl59D_n8J55hMyOGG-1fXv_E245LG/view?usp=sharing)

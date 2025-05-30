@@ -64,6 +64,8 @@
                 } else {
                     echo "$nombre ha reprobado con una calificación de $calificacion.<br>";
                 }
+
+                
             }
 
 

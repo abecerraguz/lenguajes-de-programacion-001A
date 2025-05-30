@@ -57,58 +57,10 @@
                   
 
                 <?php
-                        $publicaciones = [
-
-                            [
-                                "id" => 1,
-                                "titulo" => "Hola Angewomon de Digimon cobra vida como un personaje real en esta brutal versión que hace la inteligencia artificial",
-                                "fecha"  => "2024-01-05 13:18:32"
-                            ],
-                            [
-                                "id" => 2,
-                                "titulo" => "Este cosplay del Androide 20 de Dragon Ball Z es tan increíble que parece imposible de replicar",
-                                "fecha"  => "2023-12-21 15:24:13"
-                            ],
-                            [
-                                "id" => 3,
-                                "titulo" => "Ésta es la mini serie de suspenso que te sacará de tu zona de confort si estás harta de lo mismo",
-                                "fecha"  => "2024-01-05 13:18:32"
-                            ],
-                            [
-                                "id" => 4,
-                                "titulo" => "¡Anímate a imaginar!: Este fin de año construye tu videojuego favorito con los sets de LEGO®",
-                                "fecha"  => "2024-01-05 13:18:32"
-                            ]
-
-                            ];
-
-                        // var_dump($publicaciones);
-
-                        function parImpar($numero){
-                            // if($numero % 2 == 0){
-                            //     return ' class="par"';
-                            // }else{
-                            //     return ' class="impar"';
-                            // }
-                            return $numero % 2 == 0 ? ' class="par"' : ' class="impar"';
-                        }
-
-                        foreach ($publicaciones as $publicacion) {
-                            echo "<tr ".parImpar($publicacion['id']).">";
-                            echo "<td>{$publicacion['id']}</td>
-                           <td>{$publicacion['titulo']}</td>
-                           <td>{$publicacion['fecha']}</td>
-                        <td>
-                            <div class='buttonAction'>
-                                <a href='admin_editar.html' class='btn-edit'><i class='bi bi-pencil-square me-1'></i>Editar</a>
-                                <a href='#' class='btn-edit' data-bs-toggle='modal' data-bs-target='#editarPublicacion'><i class='bi bi-pencil-square me-1'></i>Editar</a> 
-                                <a href='#' class='btn-delete' data-bs-toggle='modal' data-bs-target='#eliminarPublicacion'><i class='bi bi-x-circle me-1'></i>Eliminar</a>
-                            </div>
-                        </td>";
-                        }
-                
+                    //  Crea un array y luego lo recorres
+                    //  No seas perezoso  
                 ?>
-                <!-- <tr>
+                <tr>
                         <td>1</td>
                         <td>Hola Angewomon de Digimon cobra vida como un personaje real en esta brutal versión que hace
                             la
@@ -121,11 +73,11 @@
                                 <a href="#" class="btn-delete" data-bs-toggle="modal" data-bs-target="#eliminarPublicacion"><i class="bi bi-x-circle me-1"></i>Eliminar</a>
                             </div>
                         </td>
-                </tr> -->
+                </tr> 
 
 
 
-                    <!-- <tr>
+                 <tr>
                         <td>2</td>
                         <td>Este cosplay del Androide 20 de Dragon Ball Z es tan increíble que parece imposible de replicar</td>
                         <td>2023-12-21 15:24:13</td>
@@ -171,7 +123,7 @@
                                         class="bi bi-x-circle me-1"></i>Eliminar</a>
                             </div>
                         </td>
-                    </tr>   -->
+                    </tr> 
 
 
 
