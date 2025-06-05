@@ -1,6 +1,6 @@
 # Experiencia de Aprendizaje 2: Aplicando PHP para realizar interacciones con la base de datos.
 ## Semana 3
-![Modelo Cliente servidor](../assets/img/modelo-cliente-servidor-php.png)
+![Modelo Cliente servidor](modelo-cliente-servidor-php.png)
 
 # ¿Qué es MySQL?
 
