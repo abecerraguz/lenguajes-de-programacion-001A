@@ -47,3 +47,4 @@ Martes, 8 de Julio de 2025 | Lunes, 14 de Julio de 2025 |
 1. Experiencia de Aprendizaje 1: Comprendiendo los elementos básicos de programación.
    1. [Semana 1 : Identificando los elementos básicos para trabajar con código](./semanas/semana-01/01-Identificando-los-elementos-basicos-para-trabajar-con-codigo.md)
    2. [Semana 2 : Armando una plantilla para mi cms](./semanas/semana-02/02-sincronica.md)
+   3. [Semana 3 : Creando una base de datos](./semanas/semana-03/03-sincronica.md)
