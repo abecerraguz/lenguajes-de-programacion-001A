@@ -54,3 +54,8 @@ Martes, 8 de Julio de 2025 | Lunes, 14 de Julio de 2025 |
    - [Semana 3 : Creando una base de datos](./semanas/semana-03/03-sincronica.md)
    - [Semana 4 : Realizando consultas SQL para trabajar con BBDD](./semanas/semana-04/04-sincronica.md)
    - [Semana 5 : Desplegando el contenido de una base de datos](./semanas/semana-05/05-sincronica.md)
+
+---
+
+3. Experiencia de Aprendizaje 3: Utilizando PHP para interactuar con la base de datos y restringir accesos.
+   - [Semana 8 : Creando una base de datos](./semanas/semana-08/08-sincronica.md)
