@@ -14,8 +14,7 @@ Comprendiendo los elementos básicos de programación.
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
 | 1      | Formativa 1:Identificando los elementos básicos para trabajar con código. | Individual | 0% | Martes, 06 de Enero de 2026 | Lunes, 12 de Enero de 2026
-| 2      | Sumativa 1:Utilizando framework para crear un CMS. | Individual | 👉 20% | Martes, 13 de Enero de 2026 | 	
-Lunes, 19 de Enero de 2026 |
+| 2      | Sumativa 1:Utilizando framework para crear un CMS. | Individual | 👉 20% | Martes, 13 de Enero de 2026 | Lunes, 19 de Enero de 2026 |
 
 ## Experiencia 2
 Aplicando PHP para realizar interacciones con la base de datos
