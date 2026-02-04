@@ -1,6 +1,6 @@
 # Flujo de trabajo CRUD (carpeta `admin/`) + GET vs POST
 
-Este documento explica **cómo funciona tu CRUD actual** (sin cambiar nada) y entrega una estrategia clara para explicar a estudiantes **cuándo y por qué se usa `GET` o `POST`**, y cómo se relaciona con:
+Este documento explica **cómo funciona tu CRUD actual**, entrega una estrategia clara para explicar a mis estudiantes **cuándo y por qué se usa `GET` o `POST`**, y cómo se relaciona con:
 
 - `admin_list.php`
 - `admin_insertar.php`
