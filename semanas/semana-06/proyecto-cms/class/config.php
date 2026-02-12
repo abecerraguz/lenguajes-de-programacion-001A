@@ -2,10 +2,10 @@
 
     $host     = "localhost";
     $username = "root";
-    $password = "ab123456";
+    $password = "";
     $dbaname  = "mi_blog"; 
 
-    $baseUrlfront = "http://localhost:8080/proyecto-cms";
-    $baseUrlAdmin = "http://localhost:8080/proyecto-cms/admin";
+    $baseUrlfront = "http://localhost/proyecto-cms";
+    $baseUrlAdmin = "http://localhost/proyecto-cms/admin";
     
 ?>

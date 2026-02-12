@@ -234,7 +234,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 ---
 
-## 7) Recomendación de cómo contarlo en clase (guion breve)
+## 7) Como funciona el administrador o admin
 
 1. “Partimos en `admin_list.php`: es el panel administrador, muestra publicaciones (SELECT).”
 2. “Clic en ‘Nueva publicación’ abre `admin_insertar.php` (GET). Solo muestra un formulario.”
