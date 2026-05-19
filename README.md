@@ -32,14 +32,14 @@ Programando un CMS administrable vía Internet
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
 | 6      | Formativa 4: Aplicando las acciones básicas para gestión de datos. | Individual | 0% | Martes, 23 de Junio de 2026 | Lunes, 29 de Junio de 2026 |
-| 7      | Sumativa 3: Utilizando PHP para interactuar con la base de datos y restringir accesos. | Individual | 👉 40% | Martes, 30 de Junio de 2026 | Lunes, 06 de Julio de 2026 |
+| 7      | Formativa 5: Utilizando PHP para interactuar con la base de datos y restringir accesos. | Individual | 0% | Martes, 30 de Junio de 2026 | Lunes, 06 de Julio de 2026 |
+| 8      | Sumativa 3 | Individual | 👉 40% | Martes, 30 de Junio de 2026 | Lunes, 06 de Julio de 2026 |
 
 
 ## Evaluación Final Transversal
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 8      | Sumativa | Individual | 👉 40% | Martes, 07 de Julio de 2026 | Lunes, 13 de Julio de 2026 |
-| 9 (EFT) | Evaluación Final Transversal | Individual | 👉 — | Jueves, 09 de Julio de 2026 | Domingo, 19 de Julio de 2026 |
+| 9 (EFT) | Evaluación Final Transversal | Individual | 👉 40%| Jueves, 09 de Julio de 2026 | Domingo, 19 de Julio de 2026 |
 
 ## Índice
 
