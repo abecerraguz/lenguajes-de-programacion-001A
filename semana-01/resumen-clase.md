@@ -364,7 +364,7 @@ En PHP, una función se define con la palabra clave function, seguida del nombre
 
 ## Semana 1
 
-### Actividad Formativa – 4 ejercicios (guía PDF)
+### Actividad Formativa – 1 ejercicios (guía PDF)
 
 Aplica los conceptos básicos de PHP resolviendo cuatro ejercicios prácticos:
 
@@ -395,5 +395,7 @@ Crea un programa en PHP que evalúe las calificaciones de un grupo de estudiante
 ### Solución ejercicio
 [index.php – Semana 1](./index.php)
 
+<!--
 ### Cierre de Experiencia 1
 [Video Cierre, Experiencia de Aprendizaje 1: Comprendiendo los elementos básicos de programación.](https://drive.google.com/file/d/1XrqAl59D_n8J55hMyOGG-1fXv_E245LG/view?usp=sharing)
+-->
