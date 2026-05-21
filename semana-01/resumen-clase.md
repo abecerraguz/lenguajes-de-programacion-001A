@@ -76,12 +76,27 @@ La forma más sencilla de trabajar con PHP sin usar la terminal es instalar un p
 ```
 
 ## PARA REALIZAR UN DEBUG
+
+### Opción 1: Directamente en el archivo PHP (más fácil)
 Al comienzo de tu archivo PHP (en desarrollo):
 ```php
    ini_set('display_errors', 1);
    ini_set('display_startup_errors', 1);
    error_reporting(E_ALL);
 ```
+
+### Opción 2: En el archivo `php.ini` (configuración global)
+Busca el archivo `php.ini` según tu sistema operativo:
+- **Windows:** `C:\xampp\php\php.ini`
+- **macOS:** `/Applications/XAMPP/xamppfiles/etc/php.ini`
+
+Cambia estas líneas:
+```ini
+display_errors = On
+display_startup_errors = On
+error_reporting = E_ALL
+```
+> Después de modificar `php.ini`, debes **reiniciar el servidor Apache** desde el panel de XAMPP/MAMP.
 
 ## VARIABLES TIPO CADENAS O STRING
 ```php

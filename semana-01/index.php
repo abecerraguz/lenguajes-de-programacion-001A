@@ -121,6 +121,20 @@
     // Llamada a la función y almacenamiento del resultado
     $promedio = calcularPromedio($notas);
 
+    /*
+     * implode(separador, array)
+     * ─────────────────────────────────────────────────────────────────────────
+     * Une todos los elementos de un array en un único string (texto),
+     * separándolos con el carácter o texto que le indiquemos.
+     *
+     * Ejemplo:
+     *   $notas = [80, 90, 75];
+     *   implode(", ", $notas)  →  "80, 90, 75"
+     *
+     * Parámetros:
+     *   1° separador → el texto que irá entre cada elemento (", " = coma + espacio)
+     *   2° array     → el arreglo cuyos elementos queremos unir
+     */
     echo "<p>Notas: <strong>" . implode(", ", $notas) . "</strong></p>";
     echo "<p>El promedio es: <strong>" . $promedio . "</strong></p>";
 
@@ -159,10 +173,33 @@
         }
     }
 
+    /*
+     * array_column(array_multidimensional, clave)
+     * ─────────────────────────────────────────────────────────────────────────
+     * Extrae todos los valores de una columna específica de un array
+     * multidimensional (funciona como una columna de tabla).
+     *
+     * Ejemplo:
+     *   $estudiantes = [
+     *     ["nombre" => "Carlos", "calificacion" => 85],
+     *     ["nombre" => "Ana",    "calificacion" => 45],
+     *   ];
+     *   array_column($estudiantes, "calificacion")  →  [85, 45]
+     *
+     * Parámetros:
+     *   1° array multidimensional → la lista de filas (array de arrays)
+     *   2° clave                  → el nombre de la columna que queremos extraer
+     */
     // Promedio general del grupo usando la función definida arriba
     $promedioGrupo = calcularPromedio(array_column($estudiantes, "calificacion"));
 
     echo "<p class='mt-2'>Promedio del grupo: <strong>$promedioGrupo</strong></p>";
+
+    /*
+     * implode() también se puede usar para mostrar una lista de nombres
+     * en lugar de recorrer el array con foreach.
+     * Aquí une los nombres del arreglo $aprobados separados por coma.
+     */
     echo "<p>Estudiantes aprobados: <strong>" . implode(", ", $aprobados) . "</strong></p>";
 
 
