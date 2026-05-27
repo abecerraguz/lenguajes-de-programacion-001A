@@ -4,7 +4,7 @@ README-RESPALDO.md
 evaluaciones/
 semanas/
 semana-01/material-semana/
-semana-02/
+semana-02/index.php
 semana-03/
 semana-04/
 semana-05/
@@ -12,3 +12,6 @@ semana-06/
 semana-07/
 semana-08/
 semana-09/
+semana-02/creando-CMS/.agents/
+semana-02/creando-CMS/.kiro/
+semana-02/creando-CMS/skills-lock.json

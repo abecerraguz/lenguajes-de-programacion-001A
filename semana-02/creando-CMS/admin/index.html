@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acceso al panel de administración del CMS">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Iniciar Sesión - Panel CMS</title>
+    <link rel="icon" type="image/png" href="../assets/img/blog.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <a href="#login-form" class="skip-link">Saltar al formulario de inicio</a>
+
+    <div class="login-page">
+        <div class="login-card">
+
+            <div class="login-card__header">
+                <img src="../assets/img/blog.png" alt="Logo del blog" class="login-card__logo">
+                <h1 class="login-card__title">Panel de Administración</h1>
+                <p class="login-card__subtitle">Ingresa tus credenciales para continuar</p>
+            </div>
+
+            <div class="login-card__body">
+                <form id="login-form" novalidate aria-label="Formulario de inicio de sesión">
+
+                    <div class="form-group form-group--icon">
+                        <label for="username" class="form-group__label">Usuario</label>
+                        <div class="form-group__wrapper">
+                            <i class="bi bi-person form-group__icon"></i>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                class="form-group__input"
+                                placeholder="Tu nombre de usuario"
+                                required
+                                autocomplete="username"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group--icon">
+                        <label for="password" class="form-group__label">Contraseña</label>
+                        <div class="form-group__wrapper">
+                            <i class="bi bi-lock form-group__icon"></i>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form-group__input"
+                                placeholder="Tu contraseña"
+                                required
+                                autocomplete="current-password"
+                            >
+                            <button type="button" class="form-group__toggle" id="togglePassword" aria-label="Mostrar contraseña">
+                                <i class="bi bi-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="remember">
+                            <span>Recordarme en este dispositivo</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary login-card__submit">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        Iniciar Sesión
+                    </button>
+
+                </form>
+
+                <div class="login-card__footer">
+                    <a href="../index.html" class="login-card__back">
+                        <i class="bi bi-arrow-left"></i>
+                        Volver al blog
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle mostrar/ocultar contraseña
+        const toggleBtn  = document.getElementById('togglePassword');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const passInput  = document.getElementById('password');
+
+        toggleBtn.addEventListener('click', () => {
+            const isHidden = passInput.type === 'password';
+            passInput.type = isHidden ? 'text' : 'password';
+            toggleIcon.className = isHidden ? 'bi bi-eye-slash' : 'bi bi-eye';
+            toggleBtn.setAttribute('aria-label', isHidden ? 'Ocultar contraseña' : 'Mostrar contraseña');
+        });
+
+        // Redirigir al listado al enviar
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = 'admin_listado.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de publicaciones sobre tecnología, cosplay, series y videojuegos.">
+    <meta name="keywords" content="blog, tecnología, cosplay, videojuegos, series, gaming, geek">
+    <title>Blog de Publicaciones - Semana 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- ===== HEADER ===== -->
+    <header class="bg-dark text-white py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="/" class="text-white text-decoration-none d-flex align-items-center gap-2">
+                <i class="bi bi-journals fs-4"></i>
+                <span class="fw-bold fs-5">Blog CMS</span>
+            </a>
+            <nav aria-label="Navegación principal">
+                <a href="creando-CMS/admin/index.html" class="btn btn-outline-light btn-sm">
+                    <i class="bi bi-person-circle me-1"></i>Administrar
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- Hero -->
+        <section class="bg-dark text-white py-5 mb-5">
+            <div class="container text-center">
+                <h1 class="display-5 fw-bold">Últimas Publicaciones</h1>
+                <p class="lead text-secondary">Tecnología, cosplay, series y videojuegos en un solo lugar.</p>
+            </div>
+        </section>
+
+        <!-- Grid de cards -->
+        <section aria-labelledby="publicaciones-heading">
+            <div class="container pb-5">
+                <h2 id="publicaciones-heading" class="h4 mb-4">
+                    <i class="bi bi-newspaper me-2"></i>Publicaciones
+                </h2>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                    <!-- Card #1 — Impar -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/tech1/600/400" class="card-img-top" alt="Tecnología del futuro: IA en la vida cotidiana" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Impar</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Tecnología</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Tecnología del futuro: IA en la vida cotidiana</h3>
+                                <p class="card-text text-muted small flex-grow-1">Descubre cómo la inteligencia artificial está transformando nuestra vida diaria con soluciones innovadoras.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>5 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>5 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #1</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #2 — Par -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/cosplay2/600/400" class="card-img-top" alt="Cosplay del año: Angewomon cobra vida" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-2">Par</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Cosplay</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Cosplay del año: Angewomon cobra vida</h3>
+                                <p class="card-text text-muted small flex-grow-1">Una artista recrea con asombroso detalle al ángel más icónico de Digimon gracias a la IA generativa.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>8 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>4 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #2</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #3 — Impar -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/series3/600/400" class="card-img-top" alt="Las mejores mini series de suspenso de 2026" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Impar</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Series</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Las mejores mini series de suspenso de 2026</h3>
+                                <p class="card-text text-muted small flex-grow-1">Una selección de producciones cortas que te mantendrán al borde del asiento durante toda la noche.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>12 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>6 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #3</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #4 — Par -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/gaming4/600/400" class="card-img-top" alt="Sets LEGO de videojuegos para armar en casa" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-2">Par</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Videojuegos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Sets LEGO de videojuegos para armar en casa</h3>
+                                <p class="card-text text-muted small flex-grow-1">Construye tus personajes favoritos de los videojuegos más emblemáticos con los nuevos sets de LEGO.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>15 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>3 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #4</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #5 — Impar -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/cosplay5/600/400" class="card-img-top" alt="El androide 20 de Dragon Ball Z en cosplay" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Impar</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Cosplay</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">El androide 20 de Dragon Ball Z en cosplay</h3>
+                                <p class="card-text text-muted small flex-grow-1">Este cosplay del Doctor Gero es tan detallado que parece sacado directamente del anime original.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>18 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>4 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #5</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #6 — Par -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/rpg6/600/400" class="card-img-top" alt="Nuevas mecánicas de juego en los RPG de 2026" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-2">Par</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Videojuegos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Nuevas mecánicas de juego en los RPG de 2026</h3>
+                                <p class="card-text text-muted small flex-grow-1">Los juegos de rol modernos reinventan la fórmula clásica con sistemas de progresión completamente nuevos.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>20 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>7 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #6</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #7 — Impar -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/quantum7/600/400" class="card-img-top" alt="Procesadores cuánticos: el próximo salto tecnológico" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Impar</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Tecnología</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Procesadores cuánticos: el próximo salto tecnológico</h3>
+                                <p class="card-text text-muted small flex-grow-1">Las grandes empresas tecnológicas se encuentran en una carrera para comercializar la computación cuántica.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>22 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>8 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #7</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #8 — Par -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/anime8/600/400" class="card-img-top" alt="Anime del año: los títulos que dominaron 2025" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-2">Par</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Series</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Anime del año: los títulos que dominaron 2025</h3>
+                                <p class="card-text text-muted small flex-grow-1">Un repaso por las series animadas que causaron furor el año pasado y siguen siendo tendencia.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>25 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>5 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #8</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #9 — Impar -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/ar9/600/400" class="card-img-top" alt="Realidad aumentada en consolas de nueva generación" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Impar</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Videojuegos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Realidad aumentada en consolas de nueva generación</h3>
+                                <p class="card-text text-muted small flex-grow-1">Las consolas de 2026 integran AR de forma nativa, cambiando para siempre la experiencia de juego en casa.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>28 ene 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>6 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #9</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #10 — Par -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/masseffect10/600/400" class="card-img-top" alt="Cosplay de Mass Effect que rompe las redes sociales" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-2">Par</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Cosplay</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Cosplay de Mass Effect que rompe las redes sociales</h3>
+                                <p class="card-text text-muted small flex-grow-1">Una comunidad de fans recrea con impresionante fidelidad los trajes de Cerberus del universo Mass Effect.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>1 feb 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>3 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #10</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #11 — Impar -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/security11/600/400" class="card-img-top" alt="Ciberseguridad doméstica: protege tus dispositivos" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Impar</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Tecnología</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Ciberseguridad doméstica: protege tus dispositivos</h3>
+                                <p class="card-text text-muted small flex-grow-1">Guía práctica para blindar tu red doméstica y mantener tus datos personales fuera del alcance de los hackers.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>5 feb 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>9 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #11</div>
+                        </div>
+                    </article>
+
+                    <!-- Card #12 — Par -->
+                    <article class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="position-relative">
+                                <img src="https://picsum.photos/seed/docu12/600/400" class="card-img-top" alt="Los mejores documentales de gaming de todos los tiempos" loading="lazy" style="height: 200px; object-fit: cover;">
+                                <span class="badge bg-primary position-absolute top-0 end-0 m-2">Par</span>
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-2">Series</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h6 fw-semibold">Los mejores documentales de gaming de todos los tiempos</h3>
+                                <p class="card-text text-muted small flex-grow-1">Desde los primeros arcades hasta los esports modernos, estas producciones cuentan la historia del videojuego.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar3 me-1"></i>10 feb 2026
+                                        &nbsp;·&nbsp;
+                                        <i class="bi bi-clock me-1"></i>5 min
+                                    </small>
+                                    <a href="#" class="btn btn-primary btn-sm">Leer más <i class="bi bi-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted small">Card #12</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-6">
+                    <h2 class="h6 fw-bold"><i class="bi bi-journals me-2"></i>Blog CMS</h2>
+                    <p class="small text-secondary mb-0">Noticias sobre tecnología, gaming y cultura geek.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center gap-3">
+                    <a href="#" aria-label="Facebook" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Twitter" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                    <a href="#" aria-label="Instagram" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="YouTube" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center text-secondary small mb-0">&copy; 2026 Blog CMS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

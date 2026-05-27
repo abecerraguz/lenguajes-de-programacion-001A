@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de administración de publicaciones del CMS">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Publicaciones - Panel CMS</title>
+    <link rel="icon" type="image/png" href="../assets/img/blog.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <nav class="navbar">
+        <div class="container navbar__inner">
+            <a href="admin_list.php" class="navbar__brand">
+                <img src="../assets/img/blog.png" alt="Logo del blog">
+                <span>Panel CMS</span>
+            </a>
+            <div class="navbar__actions">
+                <a href="index.html" class="navbar__link">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Salir</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="admin-page">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="admin-header">
+                <div class="admin-header__info">
+                    <h1><i class="bi bi-grid-1x2"></i> Publicaciones</h1>
+                    <p>Bienvenido <strong>usuario1</strong>, desde aquí gestiona el contenido de tu blog.</p>
+                </div>
+                <a href="admin_insertar.html" class="btn btn--success">
+                    <i class="bi bi-plus-circle"></i>
+                    Nueva publicación
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="admin-stats">
+                <div class="admin-stat">
+                    <div class="admin-stat__icon admin-stat__icon--blue">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <div class="admin-stat__info">
+                        <span class="admin-stat__value">4</span>
+                        <span class="admin-stat__label">Total artículos</span>
+                    </div>
+                </div>
+                <div class="admin-stat">
+                    <div class="admin-stat__icon admin-stat__icon--green">
+                        <i class="bi bi-check-circle"></i>
+                    </div>
+                    <div class="admin-stat__info">
+                        <span class="admin-stat__value">4</span>
+                        <span class="admin-stat__label">Publicados</span>
+                    </div>
+                </div>
+                <div class="admin-stat">
+                    <div class="admin-stat__icon admin-stat__icon--yellow">
+                        <i class="bi bi-tags"></i>
+                    </div>
+                    <div class="admin-stat__info">
+                        <span class="admin-stat__value">4</span>
+                        <span class="admin-stat__label">Categorías</span>
+                    </div>
+                </div>
+                <div class="admin-stat">
+                    <div class="admin-stat__icon admin-stat__icon--purple">
+                        <i class="bi bi-calendar-week"></i>
+                    </div>
+                    <div class="admin-stat__info">
+                        <span class="admin-stat__value">2</span>
+                        <span class="admin-stat__label">Esta semana</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="admin-table">
+                <div class="admin-table__header">
+                    <div class="admin-table__title-wrap">
+                        <h2 class="admin-table__title">
+                            <i class="bi bi-list-ul"></i> Lista de Publicaciones
+                        </h2>
+                        <span class="admin-table__count">4 artículos</span>
+                    </div>
+                    <div class="admin-table__search">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="tableSearch" placeholder="Buscar publicación..." aria-label="Buscar publicación">
+                    </div>
+                </div>
+
+                <div class="admin-table__wrap">
+                    <table id="postsTable">
+                        <thead>
+                            <tr>
+                                <th style="width:56px"><i class="bi bi-image"></i></th>
+                                <th><i class="bi bi-card-text"></i> Título</th>
+                                <th style="width:120px"><i class="bi bi-tag"></i> Categoría</th>
+                                <th style="width:110px"><i class="bi bi-calendar3"></i> Fecha</th>
+                                <th style="width:160px"><i class="bi bi-gear"></i> Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                // TODO: Reemplazar con consulta a base de datos
+                                // Crea un array y luego lo recorres
+                                // No seas perezoso
+                            ?>
+                            <tr>
+                                <td><img src="uploads/xgames-atd-013020-2-1024x768.jpg" alt="" class="td-thumb"></td>
+                                <td><span class="td-title">Hola Angewomon de Digimon cobra vida como un personaje real en esta brutal versión que hace la inteligencia artificial</span></td>
+                                <td><span class="td-badge td-badge--tech">Tecnología</span></td>
+                                <td class="td-date">5 ene 2026</td>
+                                <td class="td-actions">
+                                    <a href="admin_editar.html" class="btn-action btn-action--edit" title="Editar"><i class="bi bi-pencil-square"></i></a>
+                                    <button class="btn-action btn-action--delete" title="Eliminar" onclick="confirmDelete(this, 'Angewomon de Digimon')"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="uploads/1062526.jpeg" alt="" class="td-thumb"></td>
+                                <td><span class="td-title">Este cosplay del Androide 20 de Dragon Ball Z es tan increíble que parece imposible de replicar</span></td>
+                                <td><span class="td-badge td-badge--cosplay">Cosplay</span></td>
+                                <td class="td-date">21 dic 2025</td>
+                                <td class="td-actions">
+                                    <a href="#" class="btn-action btn-action--edit" title="Editar"><i class="bi bi-pencil-square"></i></a>
+                                    <button class="btn-action btn-action--delete" title="Eliminar" onclick="confirmDelete(this, 'Androide 20')"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="uploads/809d820d82096339f4615fc856e7a0f411ed69cd-2200x1414.webp" alt="" class="td-thumb"></td>
+                                <td><span class="td-title">Ésta es la mini serie de suspenso que te sacará de tu zona de confort si estás harta de lo mismo</span></td>
+                                <td><span class="td-badge td-badge--series">Series</span></td>
+                                <td class="td-date">21 dic 2025</td>
+                                <td class="td-actions">
+                                    <a href="#" class="btn-action btn-action--edit" title="Editar"><i class="bi bi-pencil-square"></i></a>
+                                    <button class="btn-action btn-action--delete" title="Eliminar" onclick="confirmDelete(this, 'Mini serie de suspenso')"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="uploads/izx076h3empnhoygqqcl.jpeg" alt="" class="td-thumb"></td>
+                                <td><span class="td-title">¡Anímate a imaginar!: Este fin de año construye tu videojuego favorito con los sets de LEGO</span></td>
+                                <td><span class="td-badge td-badge--gaming">Videojuegos</span></td>
+                                <td class="td-date">27 dic 2025</td>
+                                <td class="td-actions">
+                                    <a href="#" class="btn-action btn-action--edit" title="Editar"><i class="bi bi-pencil-square"></i></a>
+                                    <button class="btn-action btn-action--delete" title="Eliminar" onclick="confirmDelete(this, 'LEGO videojuegos')"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="admin-table__footer">
+                    <span class="admin-table__showing">Mostrando <strong id="visibleCount">4</strong> de 4 artículos</span>
+                    <a href="../index.html" class="admin-table__view-blog">
+                        <i class="bi bi-box-arrow-up-right"></i> Ver blog
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <p>&copy; 2026 Blog CMS — Panel de Administración</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Búsqueda en tabla
+        document.getElementById('tableSearch').addEventListener('input', function () {
+            const q = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#postsTable tbody tr');
+            let visible = 0;
+            rows.forEach(row => {
+                const title = row.querySelector('.td-title').textContent.toLowerCase();
+                const show = title.includes(q);
+                row.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            document.getElementById('visibleCount').textContent = visible;
+        });
+
+        // Confirmar eliminación con SweetAlert2
+        function confirmDelete(btn, title) {
+            Swal.fire({
+                title: '¿Eliminar publicación?',
+                html: 'Estás a punto de eliminar <strong>"' + title + '"</strong>.<br>Esta acción no se puede deshacer.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: '<i class="bi bi-trash"></i> Sí, eliminar',
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#e74c3c',
+                cancelButtonColor: '#6c757d',
+                focusCancel: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const row = btn.closest('tr');
+                    row.style.transition = 'opacity 0.35s ease';
+                    row.style.opacity = '0';
+                    setTimeout(() => row.remove(), 350);
+                    Swal.fire({
+                        title: 'Eliminado',
+                        text: '"' + title + '" fue eliminado correctamente.',
+                        icon: 'success',
+                        timer: 2000,
+                        timerProgressBar: true,
+                        showConfirmButton: false
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

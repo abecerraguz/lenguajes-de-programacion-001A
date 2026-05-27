@@ -1,0 +1,1233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tinymce\n"
+"Report-Msgid-Bugs-To: http://tiny.cloud\n"
+"POT-Creation-Date: 2013-03-21 16:18:52+00:00\n"
+"PO-Revision-Date: 2022-04-06 06:13\n"
+"Last-Translator: Mike Chau\n"
+"Language-Team: Spanish, Argentina\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"\"#: i18n:\n"
+"Language: es_AR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: tinymce\n"
+"X-Crowdin-Project-ID: 508598\n"
+"X-Crowdin-Language: es-AR\n"
+"X-Crowdin-File: /pot/core/tinymce_core.pot\n"
+"X-Crowdin-File-ID: 40\n"
+
+msgid "Redo"
+msgstr "Rehacer"
+
+msgid "Undo"
+msgstr "Deshacer"
+
+msgid "Cut"
+msgstr "Cortar"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "Paste"
+msgstr "Pegar"
+
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+msgid "New document"
+msgstr "Nuevo documento"
+
+msgid "Ok"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Visual aids"
+msgstr "Ayudas Visuales"
+
+msgid "Bold"
+msgstr "Negrita"
+
+msgid "Italic"
+msgstr "Itálica"
+
+msgid "Underline"
+msgstr "Subrayado"
+
+msgid "Strikethrough"
+msgstr "Tachado"
+
+msgid "Superscript"
+msgstr "Superíndice"
+
+msgid "Subscript"
+msgstr "Subíndice"
+
+msgid "Clear formatting"
+msgstr "Limpiar formateado"
+
+msgid "Remove"
+msgstr ""
+
+msgid "Align left"
+msgstr "Alinear a Izquierda"
+
+msgid "Align center"
+msgstr "Alinear al Centro"
+
+msgid "Align right"
+msgstr "Alinear a Derecha"
+
+msgid "No alignment"
+msgstr ""
+
+msgid "Justify"
+msgstr "Justificar"
+
+msgid "Bullet list"
+msgstr "Lista de Viñetas"
+
+msgid "Numbered list"
+msgstr "Lista numerada"
+
+msgid "Decrease indent"
+msgstr "Disminuir indentación"
+
+msgid "Increase indent"
+msgstr "Incrementar indentación"
+
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Formats"
+msgstr "Formatos"
+
+msgid "Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X/C/V keyboard shortcuts instead."
+msgstr "Tu navegador no soporta el acceso directo al portapapeles. Por favor, utiliza los atajos de teclados Ctrl+X/C/V."
+
+msgid "Headings"
+msgstr "Encabezados"
+
+msgid "Heading 1"
+msgstr "Encabezado 1"
+
+msgid "Heading 2"
+msgstr "Encabezado 2"
+
+msgid "Heading 3"
+msgstr "Encabezado 3"
+
+msgid "Heading 4"
+msgstr "Encabezado 4"
+
+msgid "Heading 5"
+msgstr "Encabezado 5"
+
+msgid "Heading 6"
+msgstr "Encabezado 6"
+
+msgid "Preformatted"
+msgstr "Preformateado"
+
+msgid "Div"
+msgstr ""
+
+msgid "Pre"
+msgstr ""
+
+msgid "Code"
+msgstr "Código"
+
+msgid "Paragraph"
+msgstr "Párrafo"
+
+msgid "Blockquote"
+msgstr "Cita de bloque"
+
+msgid "Inline"
+msgstr "En línea"
+
+msgid "Blocks"
+msgstr "Bloques"
+
+msgid "Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off."
+msgstr "Pegar está ahora en modo de texto plano. El contenido no será pegado como texto plano hasta que desactives esta opción."
+
+msgid "Fonts"
+msgstr "Fuentes"
+
+msgid "Font sizes"
+msgstr ""
+
+msgid "Class"
+msgstr "Clase"
+
+msgid "Browse for an image"
+msgstr "Buscar una imagen"
+
+msgid "OR"
+msgstr "O"
+
+msgid "Drop an image here"
+msgstr "Suelta una imagen aquí"
+
+msgid "Upload"
+msgstr "Subir"
+
+msgid "Uploading image"
+msgstr ""
+
+msgid "Block"
+msgstr "Bloquear"
+
+msgid "Align"
+msgstr "Alinear"
+
+msgid "Default"
+msgstr "Defecto"
+
+msgid "Circle"
+msgstr "Círculo"
+
+msgid "Disc"
+msgstr "Disco"
+
+msgid "Square"
+msgstr "Cuadrado"
+
+msgid "Lower Alpha"
+msgstr "Alfa inferior"
+
+msgid "Lower Greek"
+msgstr "Griego inferior"
+
+msgid "Lower Roman"
+msgstr "Romano inferior"
+
+msgid "Upper Alpha"
+msgstr "Alfa superior"
+
+msgid "Upper Roman"
+msgstr "Romano superior"
+
+msgid "Anchor..."
+msgstr "Ancla..."
+
+msgid "Anchor"
+msgstr ""
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "ID"
+msgstr ""
+
+msgid "ID should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores."
+msgstr ""
+
+msgid "You have unsaved changes are you sure you want to navigate away?"
+msgstr "No has guardado los cambios. ¿Estás seguro deseas continuar salir?"
+
+msgid "Restore last draft"
+msgstr "Restaurar el último borrador"
+
+msgid "Special character..."
+msgstr "Personaje especial..."
+
+msgid "Special Character"
+msgstr ""
+
+msgid "Source code"
+msgstr "Código Fuente"
+
+msgid "Insert/Edit code sample"
+msgstr "Insertar / editar muestra de código"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Code sample..."
+msgstr ""
+
+msgid "Left to right"
+msgstr "Izquierda a Derecha"
+
+msgid "Right to left"
+msgstr ""
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Fullscreen"
+msgstr "Pantalla Completa"
+
+msgid "Action"
+msgstr ""
+
+msgid "Shortcut"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Focus to menubar"
+msgstr ""
+
+msgid "Focus to toolbar"
+msgstr ""
+
+msgid "Focus to element path"
+msgstr ""
+
+msgid "Focus to contextual toolbar"
+msgstr ""
+
+msgid "Insert link (if link plugin activated)"
+msgstr ""
+
+msgid "Save (if save plugin activated)"
+msgstr ""
+
+msgid "Find (if searchreplace plugin activated)"
+msgstr ""
+
+msgid "Plugins installed ({0}):"
+msgstr ""
+
+msgid "Premium plugins:"
+msgstr ""
+
+msgid "Learn more..."
+msgstr ""
+
+msgid "You are using {0}"
+msgstr ""
+
+msgid "Plugins"
+msgstr ""
+
+msgid "Handy Shortcuts"
+msgstr ""
+
+msgid "Horizontal line"
+msgstr "Línea Horizontal"
+
+msgid "Insert/edit image"
+msgstr "Insertar/Editar Imagen"
+
+msgid "Alternative description"
+msgstr ""
+
+msgid "Accessibility"
+msgstr ""
+
+msgid "Image is decorative"
+msgstr ""
+
+msgid "Source"
+msgstr "Fuente"
+
+msgid "Dimensions"
+msgstr "Dimensiones"
+
+msgid "Constrain proportions"
+msgstr "Restricciones de proporción"
+
+msgid "General"
+msgstr ""
+
+msgid "Advanced"
+msgstr "Avanzado"
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "Vertical space"
+msgstr "Espacio Vertical"
+
+msgid "Horizontal space"
+msgstr "Espacio Horizontal"
+
+msgid "Border"
+msgstr "Borde"
+
+msgid "Insert image"
+msgstr "Insertar Imagen"
+
+msgid "Image..."
+msgstr ""
+
+msgid "Image list"
+msgstr ""
+
+msgid "Resize"
+msgstr ""
+
+msgid "Insert date/time"
+msgstr "Insertar Fecha/hora"
+
+msgid "Date/time"
+msgstr ""
+
+msgid "Insert/edit link"
+msgstr ""
+
+msgid "Text to display"
+msgstr ""
+
+msgid "Url"
+msgstr ""
+
+msgid "Open link in..."
+msgstr ""
+
+msgid "Current window"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "New window"
+msgstr ""
+
+msgid "Open link"
+msgstr ""
+
+msgid "Remove link"
+msgstr ""
+
+msgid "Anchors"
+msgstr ""
+
+msgid "Link..."
+msgstr ""
+
+msgid "Paste or type a link"
+msgstr ""
+
+msgid "The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?"
+msgstr ""
+
+msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
+msgstr ""
+
+msgid "The URL you entered seems to be an external link. Do you want to add the required https:// prefix?"
+msgstr ""
+
+msgid "Link list"
+msgstr ""
+
+msgid "Insert video"
+msgstr "Insertar Video"
+
+msgid "Insert/edit video"
+msgstr ""
+
+msgid "Insert/edit media"
+msgstr ""
+
+msgid "Alternative source"
+msgstr ""
+
+msgid "Alternative source URL"
+msgstr ""
+
+msgid "Media poster (Image URL)"
+msgstr ""
+
+msgid "Paste your embed code below:"
+msgstr ""
+
+msgid "Embed"
+msgstr ""
+
+msgid "Media..."
+msgstr ""
+
+msgid "Nonbreaking space"
+msgstr ""
+
+msgid "Page break"
+msgstr "Salto de página"
+
+msgid "Paste as text"
+msgstr "Pegar como texto"
+
+msgid "Preview"
+msgstr "Previzualización"
+
+msgid "Print"
+msgstr ""
+
+msgid "Print..."
+msgstr ""
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Find"
+msgstr "Encontrar"
+
+msgid "Replace with"
+msgstr ""
+
+msgid "Replace"
+msgstr ""
+
+msgid "Replace all"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Find and Replace"
+msgstr ""
+
+msgid "Find and replace..."
+msgstr ""
+
+msgid "Could not find the specified string."
+msgstr ""
+
+msgid "Match case"
+msgstr ""
+
+msgid "Find whole words only"
+msgstr ""
+
+msgid "Find in selection"
+msgstr ""
+
+msgid "Insert table"
+msgstr "Insertar Tabla"
+
+msgid "Table properties"
+msgstr ""
+
+msgid "Delete table"
+msgstr ""
+
+msgid "Cell"
+msgstr ""
+
+msgid "Row"
+msgstr ""
+
+msgid "Column"
+msgstr ""
+
+msgid "Cell properties"
+msgstr ""
+
+msgid "Merge cells"
+msgstr ""
+
+msgid "Split cell"
+msgstr ""
+
+msgid "Insert row before"
+msgstr ""
+
+msgid "Insert row after"
+msgstr ""
+
+msgid "Delete row"
+msgstr ""
+
+msgid "Row properties"
+msgstr ""
+
+msgid "Cut row"
+msgstr ""
+
+msgid "Cut column"
+msgstr ""
+
+msgid "Copy row"
+msgstr ""
+
+msgid "Copy column"
+msgstr ""
+
+msgid "Paste row before"
+msgstr ""
+
+msgid "Paste column before"
+msgstr ""
+
+msgid "Paste row after"
+msgstr ""
+
+msgid "Paste column after"
+msgstr ""
+
+msgid "Insert column before"
+msgstr ""
+
+msgid "Insert column after"
+msgstr ""
+
+msgid "Delete column"
+msgstr ""
+
+msgid "Cols"
+msgstr ""
+
+msgid "Rows"
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "Cell spacing"
+msgstr ""
+
+msgid "Cell padding"
+msgstr ""
+
+msgid "Row clipboard actions"
+msgstr ""
+
+msgid "Column clipboard actions"
+msgstr ""
+
+msgid "Table styles"
+msgstr ""
+
+msgid "Cell styles"
+msgstr ""
+
+msgid "Column header"
+msgstr ""
+
+msgid "Row header"
+msgstr ""
+
+msgid "Table caption"
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
+msgid "Show caption"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Center"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Cell type"
+msgstr ""
+
+msgid "Scope"
+msgstr ""
+
+msgid "Alignment"
+msgstr ""
+
+msgid "Horizontal align"
+msgstr ""
+
+msgid "Vertical align"
+msgstr ""
+
+msgid "Top"
+msgstr ""
+
+msgid "Middle"
+msgstr ""
+
+msgid "Bottom"
+msgstr ""
+
+msgid "Header cell"
+msgstr ""
+
+msgid "Row group"
+msgstr ""
+
+msgid "Column group"
+msgstr ""
+
+msgid "Row type"
+msgstr ""
+
+msgid "Header"
+msgstr ""
+
+msgid "Body"
+msgstr ""
+
+msgid "Footer"
+msgstr ""
+
+msgid "Border color"
+msgstr ""
+
+msgid "Solid"
+msgstr ""
+
+msgid "Dotted"
+msgstr ""
+
+msgid "Dashed"
+msgstr ""
+
+msgid "Double"
+msgstr ""
+
+msgid "Groove"
+msgstr ""
+
+msgid "Ridge"
+msgstr ""
+
+msgid "Inset"
+msgstr ""
+
+msgid "Outset"
+msgstr ""
+
+msgid "Hidden"
+msgstr ""
+
+msgid "Insert template..."
+msgstr ""
+
+msgid "Templates"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "Insert Template"
+msgstr ""
+
+msgid "Text color"
+msgstr "Color de Texto"
+
+msgid "Background color"
+msgstr ""
+
+msgid "Custom..."
+msgstr ""
+
+msgid "Custom color"
+msgstr ""
+
+msgid "No color"
+msgstr ""
+
+msgid "Remove color"
+msgstr ""
+
+msgid "Show blocks"
+msgstr "Mostrar bloques"
+
+msgid "Show invisible characters"
+msgstr "Mostrar caracteres invisibles"
+
+msgid "Word count"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "Document"
+msgstr ""
+
+msgid "Selection"
+msgstr ""
+
+msgid "Words"
+msgstr ""
+
+#, csharp-format
+msgid "Words: {0}"
+msgstr "Palabras:{0}"
+
+msgid "{0} words"
+msgstr ""
+
+msgid "File"
+msgstr "Archivo"
+
+msgid "Edit"
+msgstr ""
+
+msgid "Insert"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "Format"
+msgstr ""
+
+msgid "Table"
+msgstr ""
+
+msgid "Tools"
+msgstr ""
+
+msgid "Powered by {0}"
+msgstr ""
+
+msgid "Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help"
+msgstr ""
+
+msgid "Image title"
+msgstr ""
+
+msgid "Border width"
+msgstr ""
+
+msgid "Border style"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "Warn"
+msgstr ""
+
+msgid "Valid"
+msgstr ""
+
+msgid "To open the popup, press Shift+Enter"
+msgstr ""
+
+msgid "Rich Text Area"
+msgstr ""
+
+msgid "Rich Text Area. Press ALT-0 for help."
+msgstr ""
+
+msgid "System Font"
+msgstr ""
+
+msgid "Failed to upload image: {0}"
+msgstr ""
+
+msgid "Failed to load plugin: {0} from url {1}"
+msgstr ""
+
+msgid "Failed to load plugin url: {0}"
+msgstr ""
+
+msgid "Failed to initialize plugin: {0}"
+msgstr ""
+
+msgid "example"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Currency"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Quotations"
+msgstr ""
+
+msgid "Mathematical"
+msgstr ""
+
+msgid "Extended Latin"
+msgstr ""
+
+msgid "Symbols"
+msgstr ""
+
+msgid "Arrows"
+msgstr ""
+
+msgid "User Defined"
+msgstr ""
+
+msgid "dollar sign"
+msgstr ""
+
+msgid "currency sign"
+msgstr ""
+
+msgid "euro-currency sign"
+msgstr ""
+
+msgid "colon sign"
+msgstr ""
+
+msgid "cruzeiro sign"
+msgstr ""
+
+msgid "french franc sign"
+msgstr ""
+
+msgid "lira sign"
+msgstr ""
+
+msgid "mill sign"
+msgstr ""
+
+msgid "naira sign"
+msgstr ""
+
+msgid "peseta sign"
+msgstr ""
+
+msgid "rupee sign"
+msgstr ""
+
+msgid "won sign"
+msgstr ""
+
+msgid "new sheqel sign"
+msgstr ""
+
+msgid "dong sign"
+msgstr ""
+
+msgid "kip sign"
+msgstr ""
+
+msgid "tugrik sign"
+msgstr ""
+
+msgid "drachma sign"
+msgstr ""
+
+msgid "german penny symbol"
+msgstr ""
+
+msgid "peso sign"
+msgstr ""
+
+msgid "guarani sign"
+msgstr ""
+
+msgid "austral sign"
+msgstr ""
+
+msgid "hryvnia sign"
+msgstr ""
+
+msgid "cedi sign"
+msgstr ""
+
+msgid "livre tournois sign"
+msgstr ""
+
+msgid "spesmilo sign"
+msgstr ""
+
+msgid "tenge sign"
+msgstr ""
+
+msgid "indian rupee sign"
+msgstr ""
+
+msgid "turkish lira sign"
+msgstr ""
+
+msgid "nordic mark sign"
+msgstr ""
+
+msgid "manat sign"
+msgstr ""
+
+msgid "ruble sign"
+msgstr ""
+
+msgid "yen character"
+msgstr ""
+
+msgid "yuan character"
+msgstr ""
+
+msgid "yuan character, in hong kong and taiwan"
+msgstr ""
+
+msgid "yen/yuan character variant one"
+msgstr ""
+
+msgid "Emojis"
+msgstr ""
+
+msgid "Emojis..."
+msgstr ""
+
+msgid "Loading emojis..."
+msgstr ""
+
+msgid "Could not load emojis"
+msgstr ""
+
+msgid "People"
+msgstr ""
+
+msgid "Animals and Nature"
+msgstr ""
+
+msgid "Food and Drink"
+msgstr ""
+
+msgid "Activity"
+msgstr ""
+
+msgid "Travel and Places"
+msgstr ""
+
+msgid "Objects"
+msgstr ""
+
+msgid "Flags"
+msgstr ""
+
+msgid "Characters"
+msgstr ""
+
+msgid "Characters (no spaces)"
+msgstr ""
+
+msgid "{0} characters"
+msgstr ""
+
+msgid "Error: Form submit field collision."
+msgstr ""
+
+msgid "Error: No form element found."
+msgstr ""
+
+msgid "Color swatch"
+msgstr ""
+
+msgid "Color Picker"
+msgstr ""
+
+msgid "Invalid hex color code: {0}"
+msgstr ""
+
+msgid "Invalid input"
+msgstr ""
+
+msgid "R"
+msgstr ""
+
+msgid "Red component"
+msgstr ""
+
+msgid "G"
+msgstr ""
+
+msgid "Green component"
+msgstr ""
+
+msgid "B"
+msgstr ""
+
+msgid "Blue component"
+msgstr ""
+
+msgid "#"
+msgstr ""
+
+msgid "Hex color code"
+msgstr ""
+
+msgid "Range 0 to 255"
+msgstr ""
+
+msgid "Turquoise"
+msgstr ""
+
+msgid "Green"
+msgstr ""
+
+msgid "Blue"
+msgstr ""
+
+msgid "Purple"
+msgstr ""
+
+msgid "Navy Blue"
+msgstr ""
+
+msgid "Dark Turquoise"
+msgstr ""
+
+msgid "Dark Green"
+msgstr ""
+
+msgid "Medium Blue"
+msgstr ""
+
+msgid "Medium Purple"
+msgstr ""
+
+msgid "Midnight Blue"
+msgstr ""
+
+msgid "Yellow"
+msgstr ""
+
+msgid "Orange"
+msgstr ""
+
+msgid "Red"
+msgstr ""
+
+msgid "Light Gray"
+msgstr ""
+
+msgid "Gray"
+msgstr ""
+
+msgid "Dark Yellow"
+msgstr ""
+
+msgid "Dark Orange"
+msgstr ""
+
+msgid "Dark Red"
+msgstr ""
+
+msgid "Medium Gray"
+msgstr ""
+
+msgid "Dark Gray"
+msgstr ""
+
+msgid "Light Green"
+msgstr ""
+
+msgid "Light Yellow"
+msgstr ""
+
+msgid "Light Red"
+msgstr ""
+
+msgid "Light Purple"
+msgstr ""
+
+msgid "Light Blue"
+msgstr ""
+
+msgid "Dark Purple"
+msgstr ""
+
+msgid "Dark Blue"
+msgstr ""
+
+msgid "Black"
+msgstr ""
+
+msgid "White"
+msgstr ""
+
+msgid "Switch to or from fullscreen mode"
+msgstr ""
+
+msgid "Open help dialog"
+msgstr ""
+
+msgid "history"
+msgstr ""
+
+msgid "styles"
+msgstr ""
+
+msgid "formatting"
+msgstr ""
+
+msgid "alignment"
+msgstr ""
+
+msgid "indentation"
+msgstr ""
+
+msgid "Font"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "More..."
+msgstr ""
+
+msgid "Select..."
+msgstr ""
+
+msgid "Preferences"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Keyboard Navigation"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Code view"
+msgstr ""
+
+msgid "Open popup menu for split buttons"
+msgstr ""
+
+msgid "List Properties"
+msgstr ""
+
+msgid "List properties..."
+msgstr ""
+
+msgid "Start list at number"
+msgstr ""
+
+msgid "Line height"
+msgstr ""
+
+msgid "Dropped file type is not supported"
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "ImageProxy HTTP error: Rejected request"
+msgstr ""
+
+msgid "ImageProxy HTTP error: Could not find Image Proxy"
+msgstr ""
+
+msgid "ImageProxy HTTP error: Incorrect Image Proxy URL"
+msgstr ""
+
+msgid "ImageProxy HTTP error: Unknown ImageProxy error"
+msgstr ""
+
