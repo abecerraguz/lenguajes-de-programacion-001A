@@ -215,7 +215,8 @@ echo $contenido;
 
 > ⚠️ **Importante:** La carpeta [`creando-CMS/`](./creando-CMS/) es una **demostración del docente** que se utiliza como referencia visual durante las clases. **No debes copiarla ni entregarla como tu trabajo.**
 
-[Descargar plantilla creando-CMS/](creando-CMS.zip)
+<!-- [Descargar plantilla creando-CMS/](creando-CMS.zip) -->
+<a href="creando-CMS.zip" download>Haz clic aquí para descargar plantilla creando-CMS/</a>
 
 Esta plantilla se construye en vivo clase a clase para mostrar:
 - Cómo estructurar las vistas de un CMS (zona pública y zona privada)
