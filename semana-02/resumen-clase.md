@@ -1,4 +1,7 @@
+![Infografía](material-clase/infografia.png)
+
 ## Semana 2: Introducción a PHP
+
 ### Resumen para el Alumno - Preparando las plantillas para un CMS
 
 ---
@@ -13,6 +16,8 @@ PHP (Hypertext Preprocessor) es un lenguaje de programación del lado del servid
 - **Código abierto**: Es libre y gratuito
 - **Multiplataforma**: Funciona en Windows, Linux, macOS
 - **Integración con HTML**: Se puede mezclar código PHP dentro de HTML
+
+[Descargar presentación](material-clase/presentacion.pdf)
 
 ---
 
