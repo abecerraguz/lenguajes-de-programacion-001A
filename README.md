@@ -46,6 +46,8 @@ Programando un CMS administrable vía Internet
 1. Experiencia de Aprendizaje 1: Comprendiendo los elementos básicos de programación.
    - [Semana 1 : Identificando los elementos básicos para trabajar con código](./semana-01/resumen-clase.md)
    - [Semana 2 : Armando una plantilla para mi cms](./semana-02/resumen-clase.md)
+2. Experiencia de Aprendizaje 2: Aplicando PHP para realizar interacciones con la base de datos.
+   - [Semana 3 : Creando una base de datos](./semana-03/resumen-clase.md)
 <!--  
 ---
 
