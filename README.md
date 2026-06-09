@@ -1,4 +1,4 @@
-# Hitos de la asignatura
+# IFD2201 — Lenguajes de Programación · DuocUC
 
 ## Lenguajes de programación
 
