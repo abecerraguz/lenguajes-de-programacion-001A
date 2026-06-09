@@ -48,6 +48,7 @@ Programando un CMS administrable vía Internet
    - [Semana 2 : Armando una plantilla para mi cms](./semana-02/resumen-clase.md)
 2. Experiencia de Aprendizaje 2: Aplicando PHP para realizar interacciones con la base de datos.
    - [Semana 3 : Creando una base de datos](./semana-03/resumen-clase.md)
+   - [Semana 4 : Realizando consultas SQL para trabajar con BBDD](./semana-04/resumen-clase.md)
 <!--  
 ---
 
