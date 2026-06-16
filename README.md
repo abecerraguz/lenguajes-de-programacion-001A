@@ -22,8 +22,8 @@ Aplicando PHP para realizar interacciones con la base de datos
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
 | 3      | Formativa 2: Creando una base de datos | Individual | 0% | Martes, 02 de Junio de 2026 | Lunes, 08 de Junio de 2026 |
-| 4      | Sumativa 2: Realizando consultas SQL para trabajar con bases de datos | Individual | 👉 40% | Martes, 09 de Junio de 2026 | Lunes, 15 de Junio de 2026 |
-| 5      | Formativa 2: Desplegando el contenido de una base de datos con PHP. | Individual | 0% | Martes, 16 de Junio de 2026 | Lunes, 22 de Junio de 2026 |
+| 4      | Formativa 3: Realizando consultas SQL para trabajar con bases de datos | Individual | 0% | Martes, 09 de Junio de 2026 | Lunes, 15 de Junio de 2026 |
+| 5      | Sumativa 2: Desplegando el contenido de una base de datos con PHP. | Individual | 👉 40% | Martes, 16 de Junio de 2026 | Lunes, 22 de Junio de 2026 |
 
 
 ## Experiencia 3
@@ -33,7 +33,7 @@ Programando un CMS administrable vía Internet
 |--------|-----------|----------|----------|----------|----------|
 | 6      | Formativa 4: Aplicando las acciones básicas para gestión de datos. | Individual | 0% | Martes, 23 de Junio de 2026 | Lunes, 29 de Junio de 2026 |
 | 7      | Formativa 5: Utilizando PHP para interactuar con la base de datos y restringir accesos. | Individual | 0% | Martes, 30 de Junio de 2026 | Lunes, 06 de Julio de 2026 |
-| 8      | Sumativa 3 | Individual | 👉 40% | Martes, 30 de Junio de 2026 | Lunes, 06 de Julio de 2026 |
+| 8      | Sumativa 3 | Individual | 👉 40% | Martes, 7 de Julio de 2026 | Lunes, 13 de Julio de 2026 |
 
 
 ## Evaluación Final Transversal
@@ -49,6 +49,7 @@ Programando un CMS administrable vía Internet
 2. Experiencia de Aprendizaje 2: Aplicando PHP para realizar interacciones con la base de datos.
    - [Semana 3 : Creando una base de datos](./semana-03/resumen-clase.md)
    - [Semana 4 : Realizando consultas SQL para trabajar con BBDD](./semana-04/resumen-clase.md)
+   - [Semana 5 : Desplegando el contenido de una base de datos](./semana-05/resumen-clase.md)
 <!--  
 ---
 
