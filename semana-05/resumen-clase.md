@@ -1,6 +1,6 @@
-![Infografía](material-clase/infografia.png)
-# Semana 5: Desplegando el contenido de una base de datos con PHP
 
+# Semana 5: Desplegando el contenido de una base de datos con PHP
+![Infografía](material-clase/infografia.png)
 ---
 
 ## Arquitectura de 3 capas en un CMS
@@ -16,12 +16,14 @@ Un CMS (Sistema de Gestión de Contenidos) se organiza en tres capas con respons
 [Descargar presentación](material-clase/presentacion.pdf)
 
 ---
-
+![Infografía](material-clase/infografia-PPO.png)
 ## ¿Qué es una Clase en PHP?
 
 Una **clase** es un plano o plantilla que define las propiedades (atributos) y comportamientos (métodos) de un objeto. Es la estructura base de la **Programación Orientada a Objetos (POO)**.
 
 > En el CMS, la clase `db` es el "motor" de la **capa de acceso a datos**: encapsula toda la lógica de conexión y consulta a MySQL.
+
+[Descargar presentación](material-clase/presentacion-PPO.pdf)
 
 ### Componentes principales de una clase
 

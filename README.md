@@ -50,6 +50,7 @@ Programando un CMS administrable vía Internet
    - [Semana 3 : Creando una base de datos](./semana-03/resumen-clase.md)
    - [Semana 4 : Realizando consultas SQL para trabajar con BBDD](./semana-04/resumen-clase.md)
    - [Semana 5 : Desplegando el contenido de una base de datos](./semana-05/resumen-clase.md)
+      - [Uso y manejo de tipado complementario](./semana-05/tipado-en-php.md)
 <!--  
 ---
 
