@@ -13,7 +13,7 @@
 
 $dbhost = 'localhost';
 $dbuser = 'root';
-$dbpass = 'Ab193842';
+$dbpass = '';
 $dbname = 'blog';
 
 /*
