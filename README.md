@@ -53,6 +53,8 @@ Programando un CMS administrable vía Internet
       - [Uso y manejo de tipado complementario](./semana-05/tipado-en-php.md)
       - [Comandos MySQL - Referencia de Consola](./semana-05/comandos-mysql.md)
       - [Tutorial de integración sumativa 2 ](https://drive.google.com/file/d/1TvU93AmaNtffO6okwFSl5x0PPW6ZAF_e/view?usp=sharing)
+3. Experiencia de Aprendizaje 3: Utilizando PHP para interactuar con la base de datos y restringir accesos.
+   - [Semana 6 : Aplicando las acciones básicas para gestión de datos](./semana-06/resumen-clase.md)
 <!--  
 ---
 
