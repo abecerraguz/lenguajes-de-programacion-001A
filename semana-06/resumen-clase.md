@@ -1,8 +1,8 @@
 
 # Semana 6 – Aplicando las acciones básicas para gestión de datos
 ![Infografía](material-clase/infografia.png)
-> **Experiencia 3 – Semana 6 | Duoc UC**  
-> Carrera: Desarrollo y Diseño Web
+> **Experiencia 3 – Semana 6 |**  
+
 
 ---
 
