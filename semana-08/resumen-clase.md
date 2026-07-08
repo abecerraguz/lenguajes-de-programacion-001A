@@ -1,5 +1,5 @@
 # Semana 8 — Seguridad básica del CMS: sesiones, login y protección de datos
-![Infografía](meterial-clase/infografia.png)
+![Infografía](material-clase/infografia.png)
 > **Experiencia 3 – Semana 8:** Utilizando PHP para interactuar con la base de datos y restringir accesos.
 
 Esta semana completamos nuestro CMS haciendo que el **área de administración sea privada**: solo los usuarios autorizados podrán entrar. Para lograrlo vamos a combinar cuatro piezas:
@@ -11,7 +11,7 @@ Esta semana completamos nuestro CMS haciendo que el **área de administración s
 
 Y muy importante: guardaremos las contraseñas de forma segura con **`password_hash()`** y **`password_verify()`**, que es el método correcto y actual en PHP.
 
-[Descargar presentación](meterial-clase/presentacion.pdf)
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## 1. ¿Por qué proteger las contraseñas? (hashing)
