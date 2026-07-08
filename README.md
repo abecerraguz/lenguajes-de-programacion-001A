@@ -56,6 +56,7 @@ Programando un CMS administrable vía Internet
 3. Experiencia de Aprendizaje 3: Utilizando PHP para interactuar con la base de datos y restringir accesos.
    - [Semana 6 : Aplicando las acciones básicas para gestión de datos](./semana-06/resumen-clase.md)
    - [Semana 7 : Programando acciones en php para traspasar información entre páginas](./semana-07/resumen-clase.md)
+   - [Semana 8 : Semana 8: Utilizando PHP para interactuar con la base de datos y restringir accesos](./semana-08/resumen-clase.md)
 <!--  
 ---
 
