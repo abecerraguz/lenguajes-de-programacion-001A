@@ -66,7 +66,7 @@ echo $nombre;
 
 ```php
 <?php
-$nombre = $_GET['nombre']; // si el dato viene por la URL
+$nombre = $_GET['nombre']; // si el dato viene por la URLlll
 echo $nombre;
 ?>
 ```
