@@ -85,7 +85,7 @@ function updatePasswordHash($user_id, $plain_password) {
     $password_hash = password_hash($plain_password, PASSWORD_DEFAULT);
 
     // Usar consulta preparada para evitar SQL Injection
-    $stmt = $this->connection->prepare("UPDATE cms_usuarios SET u_password_hash = ? WHERE u_id = ?");
+    $stmt = $this->connection->prepare("UPDATE cms_usuarios SET u_password = ? WHERE u_id = ?");
     if (!$stmt) {
         $this->error('No se puede preparar la declaración de MySQL - ' . $this->connection->error);
         return false;
